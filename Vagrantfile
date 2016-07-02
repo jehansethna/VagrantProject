@@ -17,5 +17,10 @@ Vagrant.configure("2") do |config|
      apt-get update
      apt-get install -y python-pip
      pip install boto3
+     apt-get install tmux
+     apt-get install -y git
+     wget https://packages.chef.io/stable/ubuntu/12.04/chefdk_0.15.15-1_amd64.deb --no-check-certificate
+     dpkg -i chefdk*.deb
+     rm chefdk*.deb
   SHELL
 end
